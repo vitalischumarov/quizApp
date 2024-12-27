@@ -27,6 +27,10 @@
   border: none;
 }
 
+.button:hover {
+  background-color: darkgray;
+}
+
 .next_button_container {
   margin-left: 35px;
 }

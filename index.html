@@ -8,19 +8,53 @@
   </head>
   <body>
     <div class="question_container">
-      <h1 class="question">Question</h1>
+      <h1 id="question">Question</h1>
     </div>
 
     <div class="answer_container">
-        <div class="answer"><button class="button answer_a answer">Answer A</button></div>
-        <div class="answer"><button class="button answer_b answer">Answer B</button></div>
-        <div class="answer"><button class="button answer_c answer">Answer C</button></div>
-        <di class="answer"><button class="button answer_d answer">Answer D</button></div>
+      <div id="btnA" class="answer">
+        <button
+          class="button answer_a answerBtn"
+          id="A"
+          onclick="set_answer('A')"
+        >
+          Answer A
+        </button>
+      </div>
+      <div id="btnB" class="answer">
+        <button
+          class="button answer_b answerBtn"
+          id="B"
+          onclick="set_answer('B')"
+        >
+          Answer B
+        </button>
+      </div>
+      <div id="btnC" class="answer">
+        <button
+          class="button answer_c answerBtn"
+          id="C"
+          onclick="set_answer('C')"
+        >
+          Answer C
+        </button>
+      </div>
+      <div id="btnD" class="answer">
+        <button
+          class="button answer_d answerBtn"
+          id="D"
+          onclick="set_answer('D')"
+        >
+          Answer D
+        </button>
+      </div>
     </div>
 
     <div class="next_button_container">
-        <button class="answer small_button button">Lösung</button>
-        <button class="next small_button button">Weiter</button>
+      <button class="solution small_button button">Lösung</button>
+      <button class="next small_button button" onclick="next_question()">
+        Weiter
+      </button>
     </div>
     <script src="./script.js"></script>
   </body>
